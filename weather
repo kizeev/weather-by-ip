@@ -1,0 +1,13 @@
+#!/usr/bin/env python3.10
+from coordinates import get_coordinates_by_ip
+from ip import get_ip
+
+
+def main():
+    ip = get_ip()
+    coordinates = get_coordinates_by_ip(ip)
+    print(coordinates)
+
+
+if __name__ == '__main__':
+    main()
